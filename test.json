@@ -1,14 +1,1 @@
-{
-   "child1": {
-      "name": "Emil",
-      "year": 2004
-   },
-   "child2": {
-      "name": "Tobias",
-      "year": 2007
-   },
-   "child3": {
-      "name": "Linus",
-      "year": 2011
-   }
-}
+[["dollar", 1.08], ["yen", 0.0072], ["Livre britanique", 1.1439], ["test", 13]]
