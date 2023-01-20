@@ -1,36 +1,30 @@
 from tkinter import *
 from tkinter import ttk
 import json
-
+import functions
 change = 1.08
 
-def convert(amount,devise_1,devise_2):
+print(functions.verif_entry("100",["yen", 0.0071], ["euro", 0.8776]))
 
-        if devise_1[0] == "euro" or devise_2[0] == "euro":
-            return amount * change
-print(convert(1000,["euro",1],["dolard",1.08]))
-
-def fetch_array():
-    f = open("test.json", "r")
-    array = f.read()
-    f.close
-    return json.loads(array)
-def insert(name,value):
-    current_list=fetch_array()
-    for x in current_list:
-        if x[0]== name:
-            print("Cette devise existe déjà")
-            return 0
-    insert_array = [[name, value]]
-    current_list.extend(insert_array)
-    f = open("test.json", "w")
-    json_value=json.dumps(current_list)
-    f.write(json_value)
-    f.close()
-
-insert("test",13)
 """
 f = open("test.json", "r")
 dictio=f.read()
 y = json.loads(dictio)
 """
+main = Tk()
+main.title("Convertisseur de devises")
+main.resizable(False, False)
+
+
+
+conv = ttk.Frame(main, borderwidth=2, relief="ridge", padding="10 10 5 5")
+conv.grid(column=0, row=0, sticky=("N", "S", "W"))
+conv.columnconfigure(0, weight=1)
+conv.rowconfigure(0, weight=1)
+
+amount_enter = StringVar()
+ttk.Label(conv, text="Quantité:").grid(column=0, row=0)
+name = ttk.Entry(conv, textvariable=amount_enter).grid(column=1, row=0)
+
+
+main.mainloop()
