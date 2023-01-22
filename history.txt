@@ -1,4 +1,3 @@
-
 20/01/2023 13:52:48: 1 Euros sont équivalent à 1.08 Dollars
 20/01/2023 13:53:00: 14.55 Euros sont équivalent à 15.71 Dollars
 20/01/2023 13:53:06: 14.55 Euros sont équivalent à 15.71 Dollars
@@ -16,3 +15,4 @@
 20/01/2023 13:53:52: 14.6 Livre britaniques sont équivalent à 14.60 Livre britaniques
 20/01/2023 13:53:59: 1000 Euros sont équivalent à 141030.00 Yens
 20/01/2023 14:13:01: 150 Euros sont équivalent à 162.00 Dollars
+21/01/2023 01:42:59: 140 Euros sont équivalent à 151.20 Dollars
